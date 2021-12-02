@@ -16,7 +16,7 @@ $posts = [
             'author' => 'Michele Papagni',
             'text' => 'Testo post 2'
         ],
-        
+
     ],
     '23-05-2020' => [
         [
@@ -60,5 +60,17 @@ $posts = [
 </head>
 <body>
     
+<?php
+foreach ($posts as $key => $val) {  ?>
+   <h3> <?= ($key); ?> </h3>
+ <?php for($i=0; $i<count($val); $i++){  ?>
+    <p>
+    <?= $val[$i]['title']; ?> 
+    <?= $val[$i]['author']; ?> 
+    <?= $val[$i]['text']; ?>
+</p>  
+<?php }; ?>
+<?php } ?>
+
 </body>
 </html>
