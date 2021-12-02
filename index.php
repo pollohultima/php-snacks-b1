@@ -11,15 +11,15 @@ $games=[
     [
         'home' => 'Olimpia Milano',
     'visitors' => 'Cantù',
-    'home_points' => '55',
-    'visitors_points' => '60'
+    'home_points' => '98',
+    'visitors_points' => '40'
     ],
 
     [
         'home' => 'Olimpia Milano',
     'visitors' => 'Cantù',
-    'home_points' => '55',
-    'visitors_points' => '60'
+    'home_points' => '51',
+    'visitors_points' => '29'
     ],
     
 ];
@@ -28,11 +28,11 @@ echo'<pre>';
 var_dump($games);
 echo '</pre>';
 
-for ($i=0; $i < cont($games); $i++) {  
+for ($i=0; $i < count($games); $i++) {  
      $games[$i]['home'];
      
 }
- var_dump($games[$i]['home']);
+
 
 ?>
 
@@ -46,6 +46,15 @@ for ($i=0; $i < cont($games); $i++) {
 </head>
 <body>
 
+<?php
+for ($i=0; $i < count($games); $i++) {  ?>
+   <p> <?= $games[$i]['home']; ?> -  
+    <?= $games[$i]['visitors']; ?> | 
+    <?= $games[$i]['home_points']; ?> - 
+    <?= $games[$i]['visitors_points']; ?>
+</p>  
+     
+<?php } ?>
  
     
 </body>
