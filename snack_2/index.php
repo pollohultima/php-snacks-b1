@@ -7,7 +7,7 @@ $name=($_GET['name']);
 $email=($_GET['email']);
 $age=($_GET['age']);
 
-//var_dump(strpos($email, '@'), strlen($name) > 3, is_numeric($age) );
+var_dump(strpos($email, '@'), strlen($name) > 3, is_numeric($age) );
 
 if (strpos($email, '@') && strlen($name) > 3 && is_numeric($age) ) {
     $result = 'Accesso riuscito';
