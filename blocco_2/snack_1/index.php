@@ -32,6 +32,17 @@ $ads = [
     ],
 
 ];
+$newads=[];
+
+for ($i=0; $i < count($ads) ; $i++) { 
+    
+   if ($ads[$i]['is_active']  == true) { 
+    
+    array_push($newads, $ads[$i]); 
+   }
+};
+
+
 
 
 
@@ -51,16 +62,11 @@ $ads = [
 <body>
     
 
-<?php for ($i=0; $i < 1 ; $i++) { ?>
-    
-  <?php  if ($ads[$i]['is_active']  = true) { ?>
-
-       <img src=" <?php echo $ads[rand(0,4)]['image_path']; ?> " alt=""> 
-
- <?php   } ?>
-<?php }; ?>
-
-    
+    <?php for ($j=0; $j < 1; $j++) { ?>
+        <img src=" <?php echo $newads[rand(0, (count($newads)-1))]['image_path']; ?> " alt=""> 
+  <?php } ?>
+ 
+       
 
 </body>
 </html>
