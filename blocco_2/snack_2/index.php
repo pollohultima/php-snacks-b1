@@ -21,7 +21,10 @@ Creiamo due pagine php. La prima farà una chiamata GET alla seconda attraverso 
 </head>
 <body>
     
-
+<form action="./index2.php" method="get">
+    <label for="guest">Guest</label>
+    <input type="text" name="guest" id="guest">
+</form>
 
     
 
